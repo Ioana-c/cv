@@ -1,0 +1,309 @@
+/* Font*/
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Raleway:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&display=swap');
+
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+    --header-height: 3rem;
+
+    /*Colors*/
+    --first-color: #db8b72;
+    --first-color-second: #efeff1;
+    --first-color-alt: #4e4e50;
+    --first-color-lighter: #e0e0e2;
+    --title-color: #db8b72;
+    --text-color: #4e4e50;
+    --text-color-light: #efeff1 ;
+    --input-color: #db8b72;
+    --body-color: #efeff1 ;
+    --container-color: #e0e0e2;
+
+    /* and typography */
+    --title-font:  'Oswald', sans-serif;
+    --body-font:  'Raleway', sans-serif;
+
+    --big-font-size: 2rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .900rem;
+    --small-font-size: .800rem;
+    --smaller-font-size: .700rem;
+
+    /* Font weight */
+    --font-medium: 200;
+    --font-semi-bold: 300;
+
+    /*Margins Bottom */
+
+    --mb-0-25: .25rem ;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+    /* z index */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 100;
+}
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 3rem;
+        --h1-font-size: 2.5rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .850rem;
+        --smaller-font-size: .810rem;
+    }
+}
+
+/* Variables Dark theme */
+
+
+/* Button Dark/Light */
+
+
+/* Base */
+*{
+    box-sizing: border-box ;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 0 var(--header-height) 0 ;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,h4{
+    color: var(--title-color);
+    font-weight:  var(--font-semi-bold);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+.nav_item a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+/* Reusable classes */
+.section{
+padding: 2rem 0 4rem;
+}
+
+.section_title{
+    font-size: var(--h1-font-size);
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.section_subtitle{
+    display: block;
+    font-size: var(--small-font-size);
+    margin-bottom: var(--mb-3);
+}
+
+.section_title, .section_subtitle{
+    text-align: center;
+}
+
+/* Layout */
+.container{
+    max-width: 768px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+.divider{
+    background-color: var(--text-color);
+    width: 90%;
+    height: 1px;
+    align-content: center;
+    display: block;
+    margin: 2rem auto;
+}
+/* Nav */
+
+
+/* show menu */
+
+
+/* Active link */
+
+
+/* Change background header */
+
+
+/* Home */
+.home_container{
+    gap:1rem;
+}
+
+.home_content{
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+}
+
+.home_social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+
+.home_social-icon{
+    font-size: 1.25rem;
+    color: var(--first-color)
+}
+
+.home_social-icon:hover{
+    color: var(--first-color-alt);
+}
+
+.home_blob{
+    width: 200px;
+}
+
+
+.home_blob-img{
+    width: 200px;
+}
+
+.home_data{
+    grid-column: 1/3;
+}
+
+.home_title{
+font-size: var(--big-font-size);
+}
+
+.home_description{
+    margin-bottom: var(--mb-2);
+
+}
+
+.home_scroll{
+display:none;
+}
+
+.home_scroll-button{
+    color: var(--first-color);
+}
+
+.home_scroll-name{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+}
+
+.home_scroll-button:hover , .home_scroll-name:hover {
+    color: var(--first-color-alt);
+    transform: translateY(.30rem);
+    transition: .3s;
+}
+
+.home_scroll-arrow{
+    font-size: 1.25rem;
+}
+
+/* Buttons*/
+.button{
+    display: inline-block;
+    background-color: var(--container-color);
+    color: var(--first-color-alt);
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
+.button:hover{
+    background-color: var(--first-color-alt);
+    color: var(--body-color);
+    transition: .3s;
+}
+
+.button--flex{
+    display: inline-flex;
+    align-items: center;
+}
+
+
+/* About */
+
+about_description{
+    text-align: center;
+}
+
+/*==================== SKILLS ====================*/
+
+
+/*==================== QUALIFICATION ====================*/
+
+
+/*==================== SERVICES ====================*/
+
+
+/* Active Modal */
+
+
+/*==================== PORTFOLIO ====================*/
+
+
+
+
+
+/*==================== CONTACT ME ====================*/
+
+
+/*==================== FOOTER ====================*/
+
+
+/*========== SCROLL UP ==========*/
+
+
+/* Show scroll */
+
+
+/*========== SCROLL BAR ==========*/
+
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+
+
+/* For medium devices */
+
+
+/* For large devices */
