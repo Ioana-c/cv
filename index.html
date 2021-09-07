@@ -1,187 +1,456 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
 
-        <!-- Icons -->
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        
-        <!-- SWIPER CSS -->
-        <link rel="stylesheet" href="">
-        
-        <!-- Main CSS -->
-        <link rel="stylesheet" href="assets/css/styles.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Responsive Portfolio Website</title>
-    </head>
-    <body>
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="" class="nav_logo">Ioana C. Pascu</a>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-                <div class="nav_menu" id="nav-menu">
-                    <ul class="nav_list grid">
-                        <li class="nav_item">
-                            <a href="#home" class="nav_link">
-                                <i class="uil uil-home"></i>Home
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="about" class="nav_link">
-                                <i class="uil uil-user"></i>About
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#skills" class="nav_link">
-                                <i class="uil uil-airplay"></i>Skills
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#experience" class="nav_link">
-                                <i class="uil uil-suitcase-alt"></i>Experience
-                            </a>
-                        </li>
-                        <li class="nav_item">
-                            <a href="#contact" class="nav_link">
-                                <i class="uil uil-comment-alt-lines"></i>Contact meme
-                            </a>
-                        </li>
-                    </ul>
-                    <i class="uil uil-times-circle" id="nav-close"></i>
-                </div>
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="">
 
-                <div class="nav_butns">
-                    <div class="nav_toggle" id="nav-toggle"></div>
-                </div>
-            </nav>
-        </header>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-        <main class="main">
-            <div class="home section" id="home">
-                <div class="home_container container grid">
-                    <div class="home_content grid">
-                        <div class="home_social">
-                            <a href="https://www.linkedin.com/in/ioana-cristina-pascu/" target="_blank" class="home_social-icon">
-                                <i class="uil uil-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/Ioana-c" target="_blank"  class="home_social-icon">
-                                <i class="uil uil-github"></i>
-                            </a>
-                        </div>
-                        <div class="home_img">
-                            <svg  class='home_blob' viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                    <image class="home_blob-img" href="assets/img/C92B049C-8392-4A75-AEC5-097FE1D2F9E2_1_201_a.jpeg"/>
-                                </g>
-                            </svg>
-                        </div>
+    <title>Responsive Portfolio Website</title>
+</head>
 
-                        <div class="home_data">
-                            <h1 class="home_title">Hi, my name is Ioana</h1>
-                            <p class="home_description">“I am a junior full-stack developer, and front-end enthusiast,
-                                with almost 3 years of project oriented experience as a student 
-                                worker, and more recently as a full time employee.
-                                I am driven to further develop my skills and gain new knowledge 
-                                on the way. ”
-                                </p>
-                                <a href="#contact" class="button btn--flex">Contact <i class="uil uil-message btn_icon"></i></a>
-                        </div>
-                        <div class="home_scroll">
-                            <a href="#about" class="home_scroll-button btn--flex">
-                                <span class="home_scroll-name">Scroll down</span>
-                                <i class="uil uil-arrow-down home_scroll-arrow"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<body>
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="" class="nav_logo">Ioana C. Pascu</a>
+
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list grid">
+                    <li class="nav_item">
+                        <a href="#home" class="nav_link active_link">
+                            <i class="uil uil-home"></i>Home
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav_link">
+                            <i class="uil uil-user"></i>About
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#skills" class="nav_link">
+                            <i class="uil uil-airplay"></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#experience" class="nav_link">
+                            <i class="uil uil-suitcase-alt"></i>Experience
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav_link">
+                            <i class="uil uil-comment-alt-lines"></i>Contact me
+                        </a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#" class="nav_link">
+                           
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            <div class="about section" id="about">
-                <span class='divider'></span>
-                <h2 class="section_title">About me</h2>
-                <span class="section_subtitle">My introduction</span>
-                <div class="about_container container grid"></div>
+            <!--<div class="nav_btns">
+               
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="uil uil-moon change-theme" id='theme-button'></i>
+                </div>
+            </div> -->
+        </nav>
+    </header>
 
-                <div class="about_data">
-                    <p class="about_description">“I am a junior full-stack developer, and front-end enthusiast, with almost 3 years of project oriented experience as a student worker, and more recently as a full time employee. I am driven to further develop my skills and gain new knowledge on the way. ”</p>
-                    <div class="about_info">
-                        <div>
-                            <span class="about_info-title">08+</span>
-                            <span class="about_info-name">Years <br> experience</span>
-                        </div>
-
-                        <div>
-                            <span class="about_info-title">08+</span>
-                            <span class="about_info-name">Years <br> experience</span>
-                        </div>
-
-                        <div>
-                            <span class="about_info-title">08+</span>
-                            <span class="about_info-name">Years <br> experience</span>
-                        </div>
+    <main class="main">
+        <div class="home section" id="home">
+            <div class="home_container container grid">
+                <div class="home_content grid">
+                    <div>
+                    <div class="home_img">
+                    <img src="assets/img/C92B049C-8392-4A75-AEC5-097FE1D2F9E2_1_201_a.jpeg" alt="">
                     </div>
+                </div>
 
+                    <div>
+                    <div class="home_data">
+                        <h1 class="home_title">Hi, my name is Ioana</h1>
+                        <p class="home_description"> 'I am an application consultant and front-end enthusiast,
+                            with more than 3 years of project oriented experience, in various industries.
+                            I am driven to further develop my skills and gain new knowledge on the way.'
+                        </p>
+                        <a href="#contact" class="button btn--flex">Contact <i class="uil uil-message btn_icon"></i></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="about section" id="about">
+            <span class='divider'></span>
+            <h2 class="section_title">About me</h2>
+            <span class="section_subtitle">My introduction</span>
+
+
+            <div class="about_data container grid">
+                <div class="about_description">
                     <div class="about_buttons">
-                        <a download='' href="assets/pdf/CV-ICP.pdf" class="button btn--flex">Download <i class="uil uil-file-download button_icon"></i></a>
-                        
+                        <p class="about_description"> 'I am an application consultant and front-end enthusiast,
+                            with more than 3 years of project oriented experience, in various industries.
+                            I am driven to further develop my skills and gain new knowledge on the way.' </p>
+                        <br />
+                        <a download='' href="assets/pdf/CV-ICP.pdf" class="button btn--flex">Download CV<i
+                                class="uil uil-file-download button_icon"></i></a>
+                    </div>
+                </div>
+
+                <div class="about_info">
+                    <div>
+                        <span class="about_info-title">3+</span>
+                        <span class="about_info-name">Years <br>of experience</span>
+                    </div>
+
+                    <div>
+                        <span class="about_info-title">Multiple programing languages</span>
+                        <span class="about_info-name">Gathered through<br> hands on experience</span>
+                    </div>
+
+                    <div>
+                        <span class="about_info-title">Curious</span>
+                        <span class="about_info-name">Leaning something <br> new everyday</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="skills section" id="skills">
+            <span class='divider'></span>
+            <h2 class="section_title">Skills</h2>
+            <span class="section_subtitle">Overview of techical and soft skills</span>
+
+            <div class="skills_container container grid">
+                <div class="skills_content-container primary">
+                    <div class="skills_content primary">
+                        <div class="skills_header">
+                            <i class="uil uil-brackets-curly skills_icon "></i>
+
+                            <div>
+                                <h1 class="skills_title">Techical skills</h1>
+                            </div>
+
+                            <div class="skills_list grid">
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">HTML</h3>
+                                    </div>
+                                    <div class="skill_bar">
+                                        <span class="skill_percentage skill_html"></span>
+
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">CSS</h3>
+                                    </div>
+                                    <div class="skill_bar">
+                                        <span class="skill_percentage skill_css"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name"> C# / .Net</h3>
+                                    </div>
+                                    <div class="skill_bar">
+                                        <span class="skill_percentage skill_csharp"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name"> JavaScript</h3>
+                                    </div>
+                                    <div class="skill_bar">
+                                        <span class="skill_percentage skill_javascript"></span>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name"> ACS </h3>
+                                    </div>
+                                    <div class="skill_bar">
+                                        <span class="skill_percentage skill_acs"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills_content-container secondary">
+                    <div class="skills_content">
+                        <div class="skills_header">
+                            <i class="uil uil-clipboard-notes skills_icon"></i>
+
+                            <div>
+                                <h1 class="skills_title"> Other skills</h1>
+                            </div>
+
+                            <div class="skills_list grid">
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">AngularJS</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">Git / Source control</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name"> MySQL</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name"> Entity Framework</h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name"> Agile </h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="skills section" id="skills">
+        </div>
+
+        <div class="qualifications section" id="experience">
+            <span class='divider'></span>
+            <h2 class="section_title">Experience</h2>
+            <span class="section_subtitle">My journey</span>
+
+            <div class="qualification_container container">
+                <div class="qualification_tabs">
+                    <div class="qualification_button button--flex qualification_active" data-id="#work">
+                        <i class="uil uil-bag-alt qualification_icon"></i> Previous positions
+                    </div>
+
+                    <div class="qualification_button button--flex" data-id="#education">
+                        <i class="uil uil-book-alt qualification_icon"></i> Education
+                    </div>
+
+                </div>
+
+                <div class="qualification_sections">
+                    <div class="qualification_content qualification_active" id="work">
+                        <!-- Q1-->
+                        <div class="qualification_data">
+                            <div class="qualification_bubble">
+                                <h3 class="qualification_title">Junior Application Consultant</h3>
+                                <span class="qualification_subtitle">Wunderman Thompson</span>
+                                <div class="qualification_period">
+                                    <i class="uil uil-calender"></i> Oct 2020 - Present
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+                        <!-- Q2-->
+                        <div class="qualification_data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+
+                            <div class="qualification_bubble">
+                                <h3 class="qualification_title">Full-stack developer</h3>
+                                <span class="qualification_subtitle">Simplyture</span>
+                                <div class="qualification_period">
+                                    <i class="uil uil-calender"></i> Sep 2019 - Oct 2020
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q3-->
+                        <div class="qualification_data">
+                            <div class="qualification_bubble">
+                                <h3 class="qualification_title">Student full-stack developer</h3>
+                                <span class="qualification_subtitle">Plan2Learn</span>
+                                <div class="qualification_period">
+                                    <i class="uil uil-calender"></i> Jun 2018 - Sep 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
 
 
+                        <!-- Q4-->
+                        <div class="qualification_data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <!-- <span class="qualification_line"></span> -->
+                            </div>
+
+                            <div class="qualification_bubble">
+                                <h3 class="qualification_title">Full-stack developer intern</h3>
+                                <span class="qualification_subtitle">Plan2Learn</span>
+                                <div class="qualification_period">
+                                    <i class="uil uil-calender"></i> Feb 2018 - Jun 2018
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="qualification_content" data-content id="education">
+                        <!-- E1-->
+                        <div class="qualification_data">
+                            <div class="qualification_bubble">
+                                <h3 class="qualification_title">Bachelors in Information and Communication Techology
+                                </h3>
+                                <span class="qualification_subtitle">VIA University College</span>
+                                <div class="qualification_period">
+                                    <i class="uil uil-calender"></i> Aug 2015 - Jun 2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="contact section" id="contact">
+            <span class='divider'></span>
+            <h2 class="section_title">Contact me</h2>
+            <span class="section_subtitle">Get in touch</span>
+
+            <div class="contact_container container grid">
+                <div class="contact_info">
+                    <div class="contact_information primary">
+                        <i class="uil uil-mobile-android contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Phone</h3>
+                            <span class="contact_subtitle">52 67 73 47</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information secondary">
+                        <i class="uil uil-envelope contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Email</h3>
+                            <span class="contact_subtitle">ioana.cristina.pascu@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact_information third">
+                        <i class="uil uil-location-pin-alt contact_icon"></i>
+                        <div>
+                            <h3 class="contact_title">Location</h3>
+                            <span class="contact_subtitle">2300, Købehavn S</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact_form grid">
+                    <div class="contact_inputs grid">
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Name</label>
+                            <input type="text" class="contact_input">
+                        </div>
+                        <div class="contact_content">
+                            <label for="" class="contact_label">Email</label>
+                            <input type="email" class="contact_input">
+                        </div>
+                    </div>
+
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Subject</label>
+                        <input type="text" class="contact_input">
+                    </div>
+                    <div class="contact_content">
+                        <label for="" class="contact_label">Message</label>
+                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
+                    </div>
+
+                    <div>
+                        <a href="#" class="button btn--flex">Send me a message
+                            <i class="uil uil-message button_icon"></i></a>
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer_bg">
+            <div class="footer_container container grid">
+                <div>
+                    <h1 class="footer_title">Ioana C. Pascu</h1>
+                    <span class="footer_subtitle">Overall ok person</span>
+                </div>
+
+                <div class="footer_socials">
+                    <a href="https://www.linkedin.com/in/ioana-cristina-pascu/" target='_blank' class="footer_social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/Ioana-c" target="_blank" class="footer_social">
+                        <i class="uil uil-github"></i>
+                    </a>
+                    </ul>
+                </div>
+
+                <p class="footer_copy">&#169 ICP. All rights reserved</p>
+            </div>
             </div>
 
-            <div class="qualifications section">
+    </footer>
 
+    <!-- Scroll top -->
+<a href="#" class="scroll_up" id="scroll-up">
+    <i class="uil uil-angle-up"></i>
+</a>
 
-            </div>
+    <!-- SWIPER JS -->
+    <script src=""></script>
 
-            <div class="services section" id="services">
-                
+    <script src="assets/js/main.js"></script>
+</body>
 
-            </div>
-
-            <div class="portfolio section" id="portfolio">
-                
-
-            </div>
-
-            <div class="project section">
-
-
-            </div>
-
-
-            <div class="contact section" id="contact">
-
-
-            </div>
-        </main>
-
-        <footer class="footer">
-
-            
-        </footer>
-        
-        <!-- Scroll to top -->
-        
-
-        <!-- SWIPER JS -->
-        <script src=""></script>
- 
-        <script src="assets/js/main.js"></script>
-    </body>
 </html>
