@@ -290,7 +290,8 @@ padding: 2rem 0 ;
 }
 
 .home_data{
-    grid-column: 1/3;
+    grid-column: 1/6;
+    padding-right: 15rem;
 }
 
 .home_title{
@@ -487,7 +488,7 @@ margin-bottom: var(--mb-0-5);
 }
 
 .skill_acs{
-    width: 65%;
+    width: 90%;
 }
 /* Qualifications */
 .qualification_tabs{
@@ -608,6 +609,9 @@ margin-bottom: var(--mb-0-5);
     padding: .75rem;;
 }
 
+.btn_submit{
+    border: none;
+}
 
 
 .contact_input{
@@ -709,7 +713,7 @@ font-size: var(--h3-font-size);
 }
 
 .header,
-.main,
+.main
 .footer_container{
     padding: 0 1rem;
 }
@@ -745,6 +749,10 @@ font-size: var(--h3-font-size);
 .main,
 .footer_container{
     padding: 1rem;
+}
+
+.main{
+    padding: 1rem 10rem;
 }
 
 .nav{

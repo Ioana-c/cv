@@ -1,18 +1,3 @@
-/* Menu show and hide */
-
-
-/*  Menu show */
-/* Validate if constant exists */
-
-
-/* Menu hide */
-/* Validate if constant exists */
-
-
-/*==================== REMOVE MENU MOBILE ====================*/
-
-
-/*==================== ACCORDION SKILLS ====================*/
 
 
 /*  Qualification Tabs */
@@ -36,7 +21,6 @@ tabs.onclick = e => {
    element.classList.add("qualification_active")
    }
  }
-
 
 /*Scroll sections active*/
 const section = document.querySelectorAll('.section[id]')
@@ -81,6 +65,29 @@ function scrollUp(){
     }
 }window.addEventListener('scroll' , scrollUp)
 
-/* Dark theme*/ 
 
-const themeButton = document.getElementById('theme-button')
+window.onload = function() {
+    var status = document.getElementById('status_msg');
+    var status_err = document.getElementById('status_msg_err');
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+
+        emailjs.sendForm('service_vaanq8r', 'contact_form', this)
+            .then(function() {
+                console.log('SUCCESS!');
+                status.style.display = 'block';
+                setTimeout(function(){
+                    status.style.display = 'none';
+                    }, 3000);
+            }, function(error) {
+                console.log('FAILED...', error);
+                status_err.style.display = 'block';
+                setTimeout(function(){
+                    status_err.style.display = 'none';
+                    }, 3000);
+            });
+    });
+}

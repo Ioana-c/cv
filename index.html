@@ -14,7 +14,7 @@
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Responsive Portfolio Website</title>
+    <title>Ioana's resume</title>
 </head>
 
 <body>
@@ -49,11 +49,6 @@
                             <i class="uil uil-comment-alt-lines"></i>Contact me
                         </a>
                     </li>
-                    <li class="nav_item">
-                        <a href="#" class="nav_link">
-                           
-                        </a>
-                    </li>
                 </ul>
             </div>
 
@@ -72,16 +67,16 @@
                 <div class="home_content grid">
                     <div>
                     <div class="home_img">
-                    <img src="assets/img/C92B049C-8392-4A75-AEC5-097FE1D2F9E2_1_201_a.jpeg" alt="">
+                    <img src="assets/img/MicrosoftTeams-image.png" alt="">
                     </div>
                 </div>
 
                     <div>
                     <div class="home_data">
                         <h1 class="home_title">Hi, my name is Ioana</h1>
-                        <p class="home_description"> 'I am an application consultant and front-end enthusiast,
-                            with more than 3 years of project oriented experience, in various industries.
-                            I am driven to further develop my skills and gain new knowledge on the way.'
+                        <p class="home_description"> 'I am currently an email developer, with expericence in consultancy, and a front-end enthusiast.
+                            <br>
+                            I have more than 4 years of project oriented experience, in various industries, and I am driven to further develop my skills and gain new knowledge on the way.'
                         </p>
                         <a href="#contact" class="button btn--flex">Contact <i class="uil uil-message btn_icon"></i></a>
                     </div>
@@ -99,9 +94,9 @@
             <div class="about_data container grid">
                 <div class="about_description">
                     <div class="about_buttons">
-                        <p class="about_description"> 'I am an application consultant and front-end enthusiast,
-                            with more than 3 years of project oriented experience, in various industries.
-                            I am driven to further develop my skills and gain new knowledge on the way.' </p>
+                        <p class="about_description"> 'I am currently an email developer, with expericence in consultancy, and a front-end enthusiast.
+                            <br>
+                            I have more than 4 years of project oriented experience, in various industries, and I am driven to further develop my skills and gain new knowledge on the way.' </p>
                         <br />
                         <a download='' href="assets/pdf/CV-ICP.pdf" class="button btn--flex">Download CV<i
                                 class="uil uil-file-download button_icon"></i></a>
@@ -110,7 +105,7 @@
 
                 <div class="about_info">
                     <div>
-                        <span class="about_info-title">3+</span>
+                        <span class="about_info-title">4+</span>
                         <span class="about_info-name">Years <br>of experience</span>
                     </div>
 
@@ -184,10 +179,10 @@
 
                                 <div class="skills_data">
                                     <div class="skill_title">
-                                        <h3 class="skill_name"> ACS </h3>
+                                        <h3 class="skill_name"> Agile methodogies </h3>
                                     </div>
                                     <div class="skill_bar">
-                                        <span class="skill_percentage skill_acs"></span>
+                                        <span class="skill_percentage skill_agile"></span>
                                     </div>
                                 </div>
                             </div>
@@ -205,12 +200,6 @@
                             </div>
 
                             <div class="skills_list grid">
-                                <div class="skills_data">
-                                    <div class="skill_title">
-                                        <h3 class="skill_name">AngularJS</h3>
-                                    </div>
-                                </div>
-
                                 <div class="skills_data">
                                     <div class="skill_title">
                                         <h3 class="skill_name">Git / Source control</h3>
@@ -231,7 +220,13 @@
 
                                 <div class="skills_data">
                                     <div class="skill_title">
-                                        <h3 class="skill_name"> Agile </h3>
+                                        <h3 class="skill_name"> Adobe Campaign / Salesforce </h3>
+                                    </div>
+                                </div>
+
+                                <div class="skills_data">
+                                    <div class="skill_title">
+                                        <h3 class="skill_name">Email development</h3>
                                     </div>
                                 </div>
                             </div>
@@ -261,13 +256,29 @@
 
                 <div class="qualification_sections">
                     <div class="qualification_content qualification_active" id="work">
+                        <div class="qualification_data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification_rounder"></span>
+                                <span class="qualification_line"></span>
+                            </div>
+
+                            <div class="qualification_bubble">
+                                <h3 class="qualification_title">Email developer</h3>
+                                <span class="qualification_subtitle">Wunderman Thompson</span>
+                                <div class="qualification_period">
+                                    <i class="uil uil-calender"></i> Wunderman Thompson - Present
+                                </div>
+                            </div>
+                        </div>
                         <!-- Q1-->
                         <div class="qualification_data">
                             <div class="qualification_bubble">
                                 <h3 class="qualification_title">Junior Application Consultant</h3>
                                 <span class="qualification_subtitle">Wunderman Thompson</span>
                                 <div class="qualification_period">
-                                    <i class="uil uil-calender"></i> Oct 2020 - Present
+                                    <i class="uil uil-calender"></i> Oct 2020 - Wunderman Thompson
                                 </div>
                             </div>
 
@@ -386,33 +397,28 @@
                     </div>
                 </div>
 
-                <form action="" class="contact_form grid">
+
+                <form  class="contact_form grid" id="contact-form">
+                    <input type="hidden" name="contact_number">
                     <div class="contact_inputs grid">
                         <div class="contact_content">
                             <label for="" class="contact_label">Name</label>
-                            <input type="text" class="contact_input">
+                            <input type="text" name="user_name" class="contact_input">
                         </div>
                         <div class="contact_content">
                             <label for="" class="contact_label">Email</label>
-                            <input type="email" class="contact_input">
+                            <input type="text"  name="user_email" class="contact_input">
                         </div>
                     </div>
 
                     <div class="contact_content">
-                        <label for="" class="contact_label">Subject</label>
-                        <input type="text" class="contact_input">
+                        <label  for="" class="contact_label">Message</label>
+                        <textarea name="message" name="" id="" cols="0" rows="7" class="contact_input"></textarea>
                     </div>
-                    <div class="contact_content">
-                        <label for="" class="contact_label">Message</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact_input"></textarea>
-                    </div>
-
-                    <div>
-                        <a href="#" class="button btn--flex">Send me a message
-                            <i class="uil uil-message button_icon"></i></a>
-
-
-                    </div>
+                    <input type="submit" class="button btn--flex btn_submit" value="Send me a message">
+               
+                    <strong id="status_msg" style="display: none;">Message received :)</span>
+                    <strong id="status_msg_err" style="display: none;">Oh no :( Please email directly at: pascu700@gmail.com</span>
                 </form>
             </div>
         </div>
@@ -447,8 +453,12 @@
     <i class="uil uil-angle-up"></i>
 </a>
 
-    <!-- SWIPER JS -->
-    <script src=""></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init('1IvUG1-CfmvmVmzfJ');
+    })();
+</script>
 
     <script src="assets/js/main.js"></script>
 </body>
